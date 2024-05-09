@@ -1,0 +1,2249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pruebas diagnosticas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><!-----------Solo copiar todo lo del body, mas el script y estilos----------->
+    <!-- Contenedor para filtrar -->
+    <input type="radio" name="categories" id="TODOS" value="TODOS" checked="">
+    <input type="radio" name="categories" id="DIAGNÓSTICAS" value="DIAGNÓSTICAS">
+    <input type="radio" name="categories" id="TÉCNICAS" value="TÉCNICAS">
+
+    <div class="container-category">
+        <label for="TODOS">Todas las Pruebas</label>
+        <label for="DIAGNÓSTICAS">Pruebas Diagnósticas</label>
+        <label for="TÉCNICAS">Pruebas Técnicas</label>
+    </div>
+
+    <!-- Contenedor de todas las pruebas -->
+    <!-- Contenedor Pruebas Diagnósticas y Técnicas -->
+    <div class="grid-container">
+        <!-- Tarjeta - Diagnóstica de Automatizacion -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front ">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/foto-gratis/concepto-rpa-pantalla-tactil-mano-borrosa_23-2149311914.jpg?t=st=1706034893~exp=1706035493~hmac=f347e991f79b772adf93ad195db1232d6fc7776c2d3ea29d8911898082e3c5e4"
+                        alt="Imagen-pd-automatizacion">
+                    <h4>Automatización</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>En esta prueba se validarán las habilidades y conocimientos que tienen en el área de
+                        automatización
+                        de pruebas de software, donde se podrá evidenciar el dominio del patrón screenplay, uso de
+                        parámetros y demás elementos que permitan una buena automatización.
+                    </p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>10 preguntas</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(1)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica Analista Funcional -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/vector-gratis/oficial-auditoria-fnanciera-analisis-negocios-investigacion-mercado-pruebas-productos-concepto-analisis-datos-servicio-linea-auditoria-operaciones-comerciales-ilustracion-vector-plano-aislado_1150-55446.jpg?t=st=1706034932~exp=1706035532~hmac=7e43b065a390000ba80c3bada77f63341fc513ff3b3895e0aa8802d23f932fd7"
+                        alt="Imagen-pd-analista-funcional">
+                    <h4>Analista Funcional</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>En esta prueba se busca evaluar al candidato mediante la presentación de interrogantes que
+                        abarcan
+                        conocimientos teóricos y prácticos en áreas como UML e ingeniería de calidad de software.
+                        Además, se
+                        desafía al candidato a analizar situaciones para discernir la respuesta idónea, poniendo a
+                        prueba su
+                        habilidad en el análisis funcional.
+                    </p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>10 preguntas</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(2)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica Performance -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/vector-gratis/ingeniero-desarrollador-codigo-laptop-tableta-desarrollo-multiplataforma-sistemas-operativos-multiplataforma-concepto-entornos-software-ilustracion-aislada-violeta-vibrante-brillante_335657-312.jpg"
+                        alt="Imagen-pd-performance">
+                    <h4>Performance</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>En esta prueba de performance, se evaluarán las competencias relacionadas con el rendimiento en
+                        proyectos de software. Se busca evidenciar la comprensión de conceptos clave, como la
+                        identificación
+                        de fallas, análisis de métricas, conocimiento de arquitecturas y riesgos potenciales.
+                    </p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>10 preguntas</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(3)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica SQL y Bases de Datos -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/vector-gratis/ilustracion-sql-tecnologia-abstracta_23-2149238125.jpg?t=st=1706039200~exp=1706039800~hmac=64be1e4ffe7993cab8511454a7c4e707f73aefefca04c6d7f76cc54161426ac0"
+                        alt="Imagen-pd-sql-y-bases-de-datos">
+                    <h4>SQL y Bases de Datos</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>En esta prueba de SQL y bases de datos, se evaluarán habilidades teóricas y prácticas a niveles
+                        básico, intermedio y avanzado. Las preguntas abarcan temas como consultas, manipulación de
+                        datos,
+                        ordenamiento, inserción y actualización de registros, así como funciones y sintaxis específicas
+                        de
+                        SQL.</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>10 preguntas</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(4)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica WebServices -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/vector-gratis/plataforma-o-servicio-linea-diseno-web-receptivo-presentacion-contenido-adaptativo-diferentes-paginas-web-ilustracion-vector-plano_613284-3104.jpg?t=st=1706039269~exp=1706039869~hmac=6821bbf62959cd0a55f517fa538d025a643924122f11c1d7dffe01f93ad79f8f"
+                        alt="Imagen-pd-webservices">
+                    <h4>WebServices</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>En esta evaluación de Web Services, se indagará en los conocimientos teóricos y habilidades
+                        prácticas
+                        del candidato en el contexto específico de servicios web. Se abordarán aspectos fundamentales,
+                        permitiendo evaluar su comprensión y aplicabilidad en este campo específico de la tecnología.
+                    </p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>NA</span></li>
+                    <li>Nivel avanzado: <span>NA</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(5)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica Lenguaje Java -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://cdn.pixabay.com/photo/2017/05/19/21/12/java-2327538_1280.png"
+                        alt="Imagen-pd-lenguaje-java">
+                    <h4>Lenguaje Java</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>Esta prueba tiene como fin evaluar al candidato en sus habilidades de programación en Java,
+                        abarcando
+                        diversos aspectos del lenguaje. A través de preguntas específicas, se busca obtener una
+                        evaluación
+                        integral de las competencias del candidato en Java.</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>10 preguntas</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(6)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica ASP.NET -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/foto-gratis/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010138.jpg?w=740&amp;t=st=1706041286~exp=1706041886~hmac=0fd8411df48443972e0d9ffb134b108e8fba8aa37dfbba64cdebb59e5825e061"
+                        alt="Imagen-pd-asp.net">
+                    <h4>ASP.NET</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>Esta prueba tiene como propósito evaluar las habilidades del candidato en ASP.NET, abordando
+                        diversos
+                        aspectos del framework y sus tecnologías asociadas. A través de preguntas específicas, se busca
+                        obtener una evaluación completa de las competencias del candidato en ASP.NET.</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>10 preguntas</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(7)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica Generalidades de Desarrollo de Software -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/foto-gratis/administrador-utiliza-computadora-portatil-desarrollar-nodos-redes-neuronales-inteligencia-artificial-tecnologicamente-avanzadas-modelados-partir-cerebro-humano-trabajador-configura-aprendizaje-automatico-ia-reconocimiento-patrones_482257-70269.jpg?t=st=1706041092~exp=1706041692~hmac=1a7fc5ceb1e81ba580f7a77b867374d35dfed3e082789914ba8d899d6b38b870"
+                        alt="Imagen-pd-generalidades-desarrollo-de-software">
+                    <h4>G. Desarrollo de Software</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>Esta prueba tiene como objetivo evaluar al candidato en sus conocimientos generales de desarrollo
+                        de
+                        software. A través de preguntas variadas, se busca medir la comprensión del candidato en temas
+                        clave, como conceptos de programación, bases de datos, metodologías de desarrollo, arquitectura
+                        de
+                        software, y herramientas comunes.
+                    </p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>NA</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>NA</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(8)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica Python -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://campusvirtual.izyacademy.com/pluginfile.php/24577/course/overviewfiles/PD_Python_Imagen.jpg"
+                        alt="Imagen-pd-python">
+                    <h4>Python</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>Esta prueba tiene como objetivo evaluar al candidato en sus conocimientos generales de desarrollo
+                        de
+                        software con un enfoque en Python. A través de preguntas variadas, se busca medir la comprensión
+                        del
+                        candidato en temas clave proporcionando una evaluación integral de las habilidades del candidato
+                        en
+                        el ámbito del desarrollo de software utilizando Python.</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>10 preguntas</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(9)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica Ingeniero BI -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/foto-gratis/collage-operaciones-ingresos_23-2150847854.jpg?t=st=1706041781~exp=1706042381~hmac=39b770ad195c3a93647fbb6e7a7690825b259c215768ed4810067e77e343edc3"
+                        alt="Imagen-pd-ingeniero-bi">
+                    <h4>Ingeniero BI</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>Esta prueba teórica está diseñada para evaluar los conocimientos fundamentales de un aspirante a
+                        Ingeniero de Business Intelligence (BI) Junior. La prueba abarcará conceptos clave en el ámbito
+                        de
+                        BI, incluyendo bases de datos, modelado de datos, extracción y transformación de datos,
+                        visualización y análisis de datos. </p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>10 preguntas</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(10)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica React Native -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/foto-gratis/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010136.jpg?t=st=1706042004~exp=1706042604~hmac=39bf8e89c85a33d1241a22ba3325d9a1f64f1b750a0db9d25934bcbebaa0a468"
+                        alt="Imagen-pd-react-native">
+                    <h4>React Native</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>En esta prueba, se evalúa la competencia del candidato en React Native, explorando habilidades
+                        clave
+                        como la implementación efectiva de Hooks, comprensión de conceptos fundamentales como el DOM
+                        Virtual
+                        y JSX, capacidad para optimizar el rendimiento, gestionar listas, realizar pruebas y aplicar
+                        conocimientos avanzados en el desarrollo de aplicaciones móviles eficientes.</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>10 preguntas</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(11)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Diagnóstica Scrum Master -->
+        <div class="container-flipcard" data-category="DIAGNÓSTICAS">
+            <div class="face flex-container__card-front ">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/foto-gratis/empresarios-planeando-pared-vidrio_53876-25171.jpg?t=st=1706042048~exp=1706042648~hmac=5101fc69b1311a9a0814b0554ccd2ee9e6832ac31a9d602a2a86f4981626d584"
+                        alt="Imagen-pd-scrum-master">
+                    <h4>Scrum Master</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>En esta prueba de Scrum Master, evaluamos la comprensión de principios ágiles, roles y eventos de
+                        Scrum. Buscamos identificar la habilidad del candidato para aplicar Scrum en distintos
+                        contextos. Al
+                        final, obtenemos una visión clara de su aptitud para liderar equipos ágiles y facilitar procesos
+                        de
+                        desarrollo efectivos.</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>10 preguntas</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>10 preguntas</span></li>
+                    <li>Tiempo por nivel: <span>15 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(12)">Ver Más</button>
+            </div>
+        </div>
+
+        <!-- Contenedor Pruebas Técnicas -->
+        <!-- Tarjeta - Técnica Desarrollo Q-Vision -->
+        <div class="container-flipcard" data-category="TÉCNICAS">
+            <div class="face flex-container__card-front ">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/foto-gratis/concepto-collage-html-css-persona_23-2150062008.jpg?t=st=1706043286~exp=1706043886~hmac=8f4a0d2bcf7b54ed9eb69e87c86a1238097d3f2f6ecc8aea4e9f3772999cce30"
+                        alt="Imagen-pt-desarrollo-qvision">
+                    <h4>Desarrollo Q-Vision</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>En esta prueba técnica se busca validar los conocimientos, experiencias y habilidades que poseen
+                        los
+                        candidatos que aspiran ascender al cargo de desarrollador junior.</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>NA</span></li>
+                    <li>Nivel intermedio: <span>NA</span></li>
+                    <li>Nivel avanzado: <span>NA</span></li>
+                    <li>Tiempo por nivel: <span>3 Horas</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(13)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Técnica SQL + Data Warehouse-->
+        <div class="container-flipcard" data-category="TÉCNICAS">
+            <div class="face flex-container__card-front ">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/vector-gratis/sala-servidores-icono-almacenamiento-nube-centro-datos-concepto-base-datos-proceso-intercambio-datos_39422-556.jpg?t=st=1706043540~exp=1706044140~hmac=583fc9da6f3f41c9d4bafc4ff659858a8581bc4d5cbac01cff60c0ec874d1d28"
+                        alt="Imagen-pt-sql-y-data-warehouse">
+                    <h4>SQL + Data Warehouse</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>En esta prueba técnica de SQL + Data Warehouse, se evalúan conocimientos y habilidades a través
+                        de
+                        preguntas que abordan consultas SQL, diseño dimensional, vistas y procesos de carga de datos,
+                        proporcionando una visión integral de las competencias del candidato.</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>NA</span></li>
+                    <li>Nivel intermedio: <span>NA</span></li>
+                    <li>Nivel avanzado: <span>NA</span></li>
+                    <li>Tiempo por nivel: <span>24 Horas</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(14)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Técnica Habilidades y Conocimientos Funcionales -->
+        <div class="container-flipcard" data-category="TÉCNICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://img.freepik.com/vector-gratis/laptop-software-visualizacion-datos-desarrolladores-trabajando-visualizacion-big-data-analisis-big-data-concepto-software-visualizacion_335657-1883.jpg?t=st=1706043986~exp=1706044586~hmac=ae1d94d05780f094681e806ef18be287f360da2e37bec73a55b7f1f7818c37b0"
+                        alt="Imagen-pt-habilidades-y-conocimientos-funcionales">
+                    <h4>Habilidades y Conocimientos Funcionales</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>Esta evaluación explora las fases de prueba en estándar tradicional y ágil, cubriendo aspectos de
+                        planeación, diseño, ejecución y evaluación. Su objetivo es evaluar las habilidades y
+                        conocimientos
+                        del candidato en el ámbito de aseguramiento de la calidad y pruebas de software.</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>NA</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>NA</span></li>
+                    <li>Tiempo por nivel: <span>30 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(15)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Técnica de Requerimientos -->
+        <div class="container-flipcard" data-category="TÉCNICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://campusvirtual.izyacademy.com/pluginfile.php/25607/block_html/content/empresario-opera-enfoque-aseguramiento-calidad-garantiza-certificacion-estandarizacion-iso-lo-que-proporciona-prueba-solida-servicio-primer-nivel.jpg"
+                        alt="Imagen-pt-requerimientos">
+                    <h4>Requerimientos</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>Esta prueba técnica evalúa el conocimiento del aspirante sobre ingeniería de requerimientos, una
+                        disciplina crucial en el desarrollo de software. Se enfoca en la captura, análisis,
+                        documentación,
+                        validación y gestión de requisitos para garantizar la comprensión precisa de las necesidades del
+                        cliente y stakeholders.</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>NA</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>NA</span></li>
+                    <li>Tiempo por nivel: <span>30 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(15)">Ver Más</button>
+            </div>
+        </div>
+        <!-- Tarjeta - Técnica de Modelado de Datos-->
+        <div class="container-flipcard" data-category="TÉCNICAS">
+            <div class="face flex-container__card-front">
+                <div class="flex-container__card-img">
+                    <img src="https://campusvirtual.izyacademy.com/pluginfile.php/26270/block_html/content/sistema-gestion-documentos-software-automatizacion-dms-archivar-gestionar-forma-eficiente.jpg"
+                        alt="Imagen-pt-modelado_de_datos">
+                    <h4>Modelado de Datos</h4>
+                </div>
+                <div class="flex-container__card-text">
+                    <p>
+                        Esta prueba tecnica busca medir el dominio del aspirante en técnicas de levantamiento y
+                        especificación, elementos fundamentales en el proceso de desarrollo de software. Se centra en la
+                        habilidad para identificar, recopilar y documentar requisitos de manera precisa y transparente,
+                        asegurando una comprensión clara de las necesidades del cliente..</p>
+                </div>
+            </div>
+            <div class="face flex-container__card-back">
+                <h3>Características</h3>
+                <ul>
+                    <li>Nivel básico: <span>NA</span></li>
+                    <li>Nivel intermedio: <span>10 preguntas</span></li>
+                    <li>Nivel avanzado: <span>NA</span></li>
+                    <li>Tiempo por nivel: <span>30 minutos</span></li>
+                    <li>Para clientes: <span>Externos / internos</span></li>
+                </ul>
+                <button class="btn-open" onclick="openPopup(15)">Ver Más</button>
+            </div>
+        </div>
+    </div>
+    <!--Fin contenedor Pruebas Diagnósticas y Técnicas -->
+    <!-- Fin Div contenedor de todas las categorias-->
+
+
+    <!-- Ventana modal o popup -->
+    <div id="overlay">
+        <div id="popup">
+            <div class="popup-content">
+                <!-- Tabla - Diagnóstica de Automatizacion -->
+                <div class="tabla-container table" id="tabla1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica
+                                    Automatización</th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="2"><span>Básico -&gt; junior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato no demuestra un nivel de conocimientos básicos sobre herramientas de
+                                    automatización de software
+                                </td>
+                                <td>Si el candidato reporta que durante la ejecución de la prueba tuvo problemas como
+                                    (Internet sin señal, se fue la luz, contesto el teléfono, interrumpió la prueba,
+                                    entre
+                                    otros), validar la posibilidad de un segundo intento</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato demuestra conocimientos básicos sobre git. Conoce sobre sintaxis basica
+                                    de
+                                    java, adicional conoce conceptos generales sobre ISTQB y POO</td>
+                                <td>El candidato demuestra conocimientos básicos sobre git. Conoce sobre sintaxis basica
+                                    de
+                                    java, adicional conoce conceptos generales sobre ISTQB y POO</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="2"><span>Intermedio -&gt; semi-senior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato conoce poca sintaxis sobre automatizacion, conoce sobre tipos de
+                                    escenarios
+                                    de automaización
+                                </td>
+                                <td>
+                                    Se pueden reforzar conceptos y metodologías al interior para que alcance el nivel
+                                    intermedio.</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr class="especial-row-table">
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato conoce e identifica los distintos escenarios de automatización, conoce
+                                    sobre conceptos de APIS, tiene conocimiento sobre tipos de pruebas y cuales se deben
+                                    de
+                                    automatizar</td>
+                                <td>En caso que su calificación sea 3.5 y 4.5 se debe reforzar conceptos al interior de
+                                    Q-Vision mediante la plataforma izyacademy, para que mejore los conocimientos en
+                                    escenarios de automatización, conceptos de APIS </td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado -&gt; senior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>Conoce las generalidades de las distintas formas de automatizar, tiene conocimientos
+                                    basicos sobre integración continua, tiene conocimientos basicos sobre listas de
+                                    datos.
+                                </td>
+                                <td>
+                                    Se pueden reforzar conceptos y metodologías al interior para que alcance el nivel
+                                    intermedio.</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato sabe trabajar con metodologia ágil e integración continua, tiene
+                                    conocimientos sobre automatizacion web, móvil y servicios, maneja buenas practicas
+                                    de
+                                    programación, conoce sobre el ciclo de vida del desarrollo de software y donde se
+                                    debe
+                                    comenzar a realizar las automatizaciones.</td>
+                                <td>Candidato Senior</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica Analista Funcional -->
+                <div class="tabla-container table" id="tabla2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica Analista
+                                    Funcional</th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="2"><span>Básico -&gt; junior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato no demuestra un nivel de conocimientos básicos sobre herramientas de
+                                    automatización de software
+                                </td>
+                                <td>Si el candidato reporta que durante la ejecución de la prueba tuvo problemas como
+                                    (Internet sin señal, se fue la luz, contesto el teléfono, interrumpió la prueba,
+                                    entre
+                                    otros), validar la posibilidad de un segundo intento</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato demuestra conocimientos básicos sobre git. Conoce sobre sintaxis basica
+                                    de
+                                    java, adicional conoce conceptos generales sobre ISTQB y POO</td>
+                                <td>El candidato demuestra conocimientos básicos sobre git. Conoce sobre sintaxis basica
+                                    de
+                                    java, adicional conoce conceptos generales sobre ISTQB y POO</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="2"><span>Intermedio -&gt; semi-senior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato conoce poca sintaxis sobre automatizacion, conoce sobre tipos de
+                                    escenarios
+                                    de automaización
+                                </td>
+                                <td>
+                                    Se pueden reforzar conceptos y metodologías al interior para que alcance el nivel
+                                    intermedio.</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr class="especial-row-table">
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato conoce e identifica los distintos escenarios de automatización, conoce
+                                    sobre conceptos de APIS, tiene conocimiento sobre tipos de pruebas y cuales se deben
+                                    de
+                                    automatizar</td>
+                                <td>En caso que su calificación sea 3.5 y 4.5 se debe reforzar conceptos al interior de
+                                    Q-Vision mediante la plataforma izyacademy, para que mejore los conocimientos en
+                                    escenarios de automatización, conceptos de APIS </td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado -&gt; senior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>Conoce las generalidades de las distintas formas de automatizar, tiene conocimientos
+                                    basicos sobre integración continua, tiene conocimientos basicos sobre listas de
+                                    datos.
+                                </td>
+                                <td>
+                                    Se pueden reforzar conceptos y metodologías al interior para que alcance el nivel
+                                    intermedio.</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato sabe trabajar con metodologia ágil e integración continua, tiene
+                                    conocimientos sobre automatizacion web, móvil y servicios, maneja buenas practicas
+                                    de
+                                    programación, conoce sobre el ciclo de vida del desarrollo de software y donde se
+                                    debe
+                                    comenzar a realizar las automatizaciones.</td>
+                                <td>Candidato Senior</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica Performance -->
+                <div class="tabla-container table" id="tabla3">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica
+                                    Performance
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="2"><span>Básico -&gt; junior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato no demuestra un nivel de conocimientos básicos sobre los conceptos de
+                                    las
+                                    pruebas de performance
+                                </td>
+                                <td>
+                                    Si el candidato reporta que durante la ejecución de la prueba tuvo problemas como
+                                    (Internet sin señal, se fue la luz, contesto el teléfono, interrumpió la prueba,
+                                    entre
+                                    otros), validar la posibilidad de un segundo intento para aplicar esta prueba. </td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato demuestra conocimientos básicos en los conceptos de pruebas de
+                                    performance.
+                                    Adicional conoce conceptos generales sobre procesos de aseguramiento de calidad y
+                                    análisis básico de métricas de rendimiento. </td>
+                                <td>En caso que su calificación sea 3.5 y 4.5 se debe reforzar conceptos al interior de
+                                    Qvision mediante la plataforma IzyAcademy, para que su calificación sea de nivel
+                                    superior.</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="2"><span>Intermedio -&gt; semi-senior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato conoce teoría de pruebas pero le falta experiencia en la practica, por
+                                    tanto se considera que su nivel sigue siendo Junior.
+                                </td>
+                                <td>
+                                    Se pueden reforzar conceptos y metodologías al interior para que alcance el nivel
+                                    semi-senior.</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr class="especial-row-table">
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato conoce e identifica la metodología de pruebas de performance nivel
+                                    intermedio, aplicando análisis de infraestructura y arquitectura, implementación de
+                                    script con Jmeter y conocimientos de AWS de manera solida. </td>
+                                <td>En caso que su calificación sea 3.5 y 4.5 se debe reforzar conceptos al interior de
+                                    Qvision mediante la plataforma IzyAcademy, para que su calificación sea de nivel
+                                    superior. </td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado -&gt; senior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>Es un candidato semi-senior; conoce las generalidades de las metodología de pruebas
+                                    de
+                                    performance, como la facilidad de implementar scripts, pero le falta mas capacidad
+                                    de
+                                    análisis y experiencia para la gestión de proyectos.
+                                </td>
+                                <td>
+                                    Se debe reforzar en capacidad de análisis, experiencia en gestión de proyectos y
+                                    aplicación del proceso en conjunto con otras herramientas. </td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato conoce teoría y metodología del proceso de pruebas de performance y
+                                    gestión
+                                    de proyectos de manera ágil y completa. Se ha enfrentado a retos en su experiencia
+                                    que
+                                    le permiten autogestionarse he implementar nuevas tecnologías y procesos al
+                                    performance.
+                                    Dando soluciones rápidas y generando valor a los clientes y proyectos. </td>
+                                <td>Candidato Senior</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica SQL y Bases de Datos -->
+                <div class="tabla-container table" id="tabla4">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica Analista
+                                    SQL
+                                    y Base De Datos</th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="2"><span>Básico -&gt; junior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    El candidato no demuestra un nivel de conocimientos básicos sobre SQL.
+                                </td>
+                                <td>
+                                    Si el candidato reporta que durante la ejecución de la prueba tuvo problemas como
+                                    (Internet sin señal, se fue la luz, contesto el teléfono, interrumpió la prueba,
+                                    entre
+                                    otros), validar la posibilidad de un segundo intento para aplicar esta prueba. </td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato demuestra conocimientos teoricos y practicos a nivel basico SQL. </td>
+                                <td>En caso que su calificación sea 3.5 y 4.5 se debe reforzar conceptos al interior de
+                                    Qvision mediante la plataforma IzyAcademy, para que su calificación sea de nivel
+                                    superior.</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="2"><span>Intermedio -&gt; semi-senior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato conoce teoría de pruebas pero le falta experiencia en la practica, por
+                                    tanto se considera que su nivel sigue siendo Junior.
+                                </td>
+                                <td>
+                                    Se pueden reforzar conceptos al interior para que alcance el nivel semi-senior.</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr class="especial-row-table">
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato conoce e identifica scripts de pruebas, teoria y algunas estructuras
+                                    usadas
+                                    en SQL. </td>
+                                <td>En caso que su calificación sea 3.5 y 4.5 se debe reforzar conceptos al interior de
+                                    Qvision mediante la plataforma IzyAcademy, para que su calificación sea de nivel
+                                    superior. </td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado -&gt; senior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>Es un candidato semi-senior; conoce las generalidades teoricas y manejos de scripts
+                                    SQL.
+                                </td>
+                                <td>
+                                    Se debe reforzar en capacidad de análisis y experiencia en SQL. </td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato conoce teoría, interpreta y crea script de consultas necesarias para
+                                    validar los datos solicitados en las pruebas requeridas al interior del cliente.
+                                </td>
+                                <td>Candidato Senior.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica WebServices -->
+                <div class="tabla-container table" id="tabla5">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica
+                                    WebServices
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr class="especial-row-table">
+                                <td rowspan="2"><span>Nivel Único</span></td>
+                                <td class="first-approved">0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    - El candidato conoce teoría pero carece de practica en el manejo de WebServices
+                                </td>
+                                <td>
+                                    Se pueden reforzar conceptos y metodologías al interior. De igual forma el candidato
+                                    debe realizar autoestudio para comprender la finalidad de los WebServices</td>
+                                <td rowspan="2">
+                                    - Proposito de WS<br>
+                                    - Tipos de mensajeria<br>
+                                    - WSDL<br>
+                                    - Componentes de arquitectura<br>
+                                    - Usos<br>
+                                    - Mensajeria XML<br>
+                                    - Herramientas<br>
+                                    - Protocolos y lenguajes<br>
+                                    - Métodos REST<br>
+                                </td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="third-approved">3,5 - 5</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    - El candidato tiene experiencia en el manejo de los WebServices<br>
+                                    - El candidato tiene conocimiento teórico<br>
+                                    - El candidato se desenvuelve correctamente con las herramientas que se usan para
+                                    ejecutar los WebServices
+                                </td>
+                                <td>
+                                    En caso que su calificación sea 3.5 y 4.5 se debe reforzar conceptos al interior de
+                                    Qvision mediante la plataforma IzyAcademy</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica Lenguaje Java -->
+                <div class="tabla-container table" id="tabla6">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica Lenguaje
+                                    Java</th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="3"><span>Básico</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    El candidato no ha alcanzado el nivel básico en el desarrollo de software en Java.
+                                </td>
+                                <td>- Recomendar una profundización en conceptos básicos de Java, incluyendo variables,
+                                    estructuras de control, bucles, y condicionales.<br>- Además, sugerir la práctica
+                                    con
+                                    ejercicios sencillos para mejorar la comprensión y la habilidad de codificación.
+                                </td>
+                                <td rowspan="3">- Variables y Tipos de Datos<br>
+                                    - Estructuras de Control<br>
+                                    - Arreglos y Colecciones<br>
+                                    - Funciones y Métodos<br>
+                                    - Orientación a Objetos<br>
+                                    - Excepciones<br>
+                                    - Manejo de Cadenas<br>
+                                    - Comentarios y Documentación<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato ha alcanzado el nivel intermedio en el desarrollo de software en Java,
+                                    pero
+                                    aún necesita mejorar.</td>
+                                <td>
+                                    - Sugerir la resolución de problemas más complejos y proyectos más grandes para
+                                    ganar
+                                    experiencia práctica.<br> - Continuar aprendiendo sobre conceptos avanzados de Java.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato ha alcanzado un nivel sólido en el desarrollo de software en Java a
+                                    nivel
+                                    intermedio.</td>
+                                <td>
+                                    -Si el candidato aplica para un cargo semi senior se recomienda realizar pruebas
+                                    técnicas y alentar la exploración de conceptos de nivel avanzado en Java.<br> -
+                                    Animar a
+                                    participar en proyectos más desafiantes y colaborativos.</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="3"><span>Intermedio</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    El candidato no ha alcanzado el nivel intermedio en el desarrollo de software en
+                                    Java.
+                                </td>
+                                <td>
+                                    - Recomendar un repaso completo de los conceptos básicos y la práctica constante
+                                    para
+                                    fortalecer su comprensión y habilidades en Java.<br> -
+                                    En caso de requerir un desarrollador junior puede continuar en el proceso, de lo
+                                    contrario no es un candidato par nivel semi senior.</td>
+                                <td rowspan="3">
+                                    - Programación Orientada a Objetos (POO)<br>
+                                    - Herencia y Polimorfismo<br>
+                                    - Colecciones Avanzadas<br>
+                                    - Gestión de Excepciones Avanzada<br>
+                                    - Hilos y Concurrencia<br>
+                                    - Stream API<br>
+                                    - Patrones de Diseño<br>
+                                    - Manejo de Archivos <br>
+                                    - JDBC y Acceso a Bases de Datos<br>
+                                    - Interfaces y Abstract Classes<br>
+                                    - Lambda Expressions<br>
+                                    - Generics<br>
+                                    - Testing y JUnit<br>
+                                    - Gestión de Dependencias
+                                </td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato ha alcanzado el nivel intermedio en el desarrollo de software en Java,
+                                    pero
+                                    aún necesita mejorar.</td>
+                                <td>- Sugerir la resolución de problemas más complejos y proyectos más grandes para
+                                    ganar
+                                    experiencia práctica.<br>- Continuar aprendiendo sobre conceptos avanzados de Java.
+                                </td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato ha alcanzado un nivel sólido en el desarrollo de software en Java a
+                                    nivel
+                                    intermedio.</td>
+                                <td>- Si el candidato aplica para un cargo semi senior se recomienda realizar pruebas
+                                    técnicas y alentar la exploración de conceptos de nivel avanzado en Java.<br>-
+                                    Animar a
+                                    participar en proyectos más desafiantes y colaborativos.</td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    El candidato no ha alcanzado el nivel avanzado en el desarrollo de software en Java.
+                                </td>
+                                <td>- Recomendar una revisión exhaustiva de conceptos avanzados y la participación en
+                                    proyectos desafiantes.<br>
+                                    - En caso de requerir un cargo Senior el aspirante deja dudas en cuanto a conceptos.
+                                </td>
+                                <td rowspan="3">
+                                    - Patrones de Diseño Avanzados<br>
+                                    - Programación Funcional<br>
+                                    - API de Streams Avanzada<br>
+                                    - Rendimiento y Optimización<br>
+                                    - Servicios Web y APIs Rest<br>
+                                    - Frameworks y Bibliotecas<br>
+                                    - Seguridad en Aplicaciones<br>
+                                    - Microservicios<br>
+                                    - Desarrollo de Interfaces de Usuario<br>
+                                    - Integración de Sistemas
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    se ha abierto en modo de solo lectura.
+                                    E12 El candidato ha alcanzado el nivel avanzado en el desarrollo de software en
+                                    Java,
+                                    pero todavía hay margen de mejora.
+                                </td>
+                                <td>
+                                    - Sugerir la resolución de problemas complejos y proyectos de mayor envergadura para
+                                    ganar experiencia.<br>- Continuar explorando conceptos avanzados.
+                                    Se recomienda realizar prueba técnica.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato ha alcanzado un nivel sólido en el desarrollo de software en Java a
+                                    nivel
+                                    avanzado.</td>
+                                <td>
+                                    - El candidato es optimo para continuar con el proceso se recomienda alentar la
+                                    exploración de temas más especializados y el liderazgo en proyectos de desarrollo.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica ASP.NET -->
+                <div class="tabla-container table" id="tabla7">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica ASP.NET
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="3"><span>Básico</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato no conoce acerca de los conceptos básicos del desarrollo de software en
+                                    un
+                                    entorno de .NET.</td>
+                                <td>Se recomienda tomar cursos para un aprendizaje óptimo de .Net, por ejemplo la ruta
+                                    de
+                                    formación de .Net en Izy Academy.</td>
+                                <td rowspan="3">1. Creación de proyectos .Net<br>
+                                    2. Estructura de datos .Net<br>
+                                    3. Definición de variables<br>
+                                    Conceptos de Entity Framework
+                                    4.uso de MVC<br>
+                                    conceptos básicos de BD y .NET
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato conoce algunos conceptos básicos del desarrollo de software en un
+                                    entorno
+                                    de.net.</td>
+                                <td>
+                                    Evaluar la comprensión de algunos conceptos empleados en esta prueba en una próxima
+                                    etapa del proceso.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato domina los conceptos básicos para un desarrollo de software en .Net.
+                                </td>
+                                <td>Evaluar experiencia y ver si el nivel del desarrollador esta dado para un
+                                    desarrollador
+                                    junior, semi senior o senior.</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="3"><span>Intermedio</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato no conoce conceptos de nivel intermedio, como Desarrollo de Apis, o
+                                    desarrollo en múltiples capas utilizando .Net y .Net core.</td>
+                                <td>Si el candidato es requerido para un cargo de desarrollo Junior se debe evaluar en
+                                    una
+                                    segunda etapa del proceso. De lo contrario es necesario fortalecer conocimientos
+                                    para el
+                                    nivel que se presenta.</td>
+                                <td rowspan="3">1. Conceptos de Apis<br>
+                                    2. Conceptos de Desarrollo por capas<br>
+                                    3. uso de conceptos .Net y .Net Core
+                                </td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato cuenta con el conocimiento necesario para el desarrollo de software por
+                                    capas y desarrollo de Apis.</td>
+                                <td>Es necesario evaluar si el candidato no domina los conceptos pero cuenta con la
+                                    practica
+                                    y experiencia. Se recomienda una prueba técnica.</td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato domina los conceptos de Apis y desarrollo por capas en .Net y Net Core.
+                                </td>
+                                <td>
+                                    Si el cargo aplicado es Desarrollador semi senior, el candidato cuenta con los
+                                    conocimientos mínimos necesarios para este rol, se debe continuar con una valoración
+                                    técnica .</td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato conoce los conceptos necesarios para desarrollar a un Nivel semi
+                                    senior,
+                                    sin embargo aun le falta mas expertiz para un nivel senior.</td>
+                                <td>Si el candidato es requerido para un nivel semi senior o Junior, se debe evaluar en
+                                    una
+                                    segunda fase, de lo contrario no cuenta con los conceptos básicos para este nivel.
+                                </td>
+                                <td rowspan="3">1. Conceptos de arquitectura<br>
+                                    2. conceptos de la nube <br>
+                                    3. conceptos de despliegues <br>
+                                    4. conceptos de Docker
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>El candidato conoce los conceptos básicos de un nivel senior como arquitecturas,
+                                    puestas
+                                    a producción y gestión configuración de desarrollos en .Net core, Apis, Docker,
+                                    conceptos de la nube.</td>
+                                <td>Es necesario evaluar si el candidato domina los conceptos y cuenta con la
+                                    experiencia
+                                    necesaria para el cargo.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato domina perfectamente los conceptos necesarios para un nivel senior.
+                                </td>
+                                <td>El candidato cuanta con los conceptos de un desarrollador de nivel avanzado, es
+                                    importante evaluar si cuenta con la experiencia necesaria.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica Generalidades de Desarrollo de Software -->
+                <div class="tabla-container table" id="tabla8">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica
+                                    Generalidades De Desarrollo De Software</th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr class="especial-row-table">
+                                <td rowspan="3"><span>Nivel Único</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    El candidato no ha alcanzado el nivel básico en los fundamentos del desarrollo de
+                                    software.</td>
+                                <td>
+                                    Recomendar una revisión completa de los conceptos básicos y la práctica constante de
+                                    resolución de problemas.
+                                    No se recomienda para un proceso de selección.</td>
+                                <td rowspan="3">
+                                    - Conceptos de Programación<br>
+                                    - Programación Orientada a Objetos<br>
+                                    - Estructuras de Datos<br>
+                                    - Algoritmos Básicos<br>
+                                    - Depuración y Resolución de Problemas<br>
+                                    - Control de Versiones<br>
+                                    - Buenas Prácticas de Codificación<br>
+                                    - Pruebas y Validación<br>
+                                    - Diseño de Algoritmos<br>
+                                    - Metodologías de Desarrollo de Software<br>
+                                    - Gestión de Proyectos
+                                </td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato ha alcanzado el nivel básico en los fundamentos del desarrollo de
+                                    software,
+                                    pero hay margen para mejorar.</td>
+                                <td>Sugerir la resolución de problemas más complejos y la construcción de proyectos
+                                    pequeños
+                                    para ganar experiencia. Continuar aprendiendo sobre conceptos avanzados.
+                                    Se debe evaluar el desempeño con las pruebas diagnosticas propias del lenguaje o
+                                    cargo .
+                                </td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato ha alcanzado un nivel sólido en los fundamentos del desarrollo de
+                                    software.
+                                </td>
+                                <td>Se recomienda realizar el proceso de selección y continuar con las pruebas
+                                    diagnosticas
+                                    propias del cargo o lenguaje.</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica Python -->
+                <div class="tabla-container table" id="tabla9">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica Python
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="3"><span>Básico</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    El estudiante tiene dificultades significativas con los conceptos básicos de Python.
+                                </td>
+                                <td>
+                                    Se recomienda revisar tutoriales y material introductorio de Python antes de
+                                    continuar a
+                                    niveles más avanzados.</td>
+                                <td rowspan="3">
+                                    Sintaxis básica, estructuras de control, tipos de datos primitivos.</td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El estudiante entiende los conceptos básicos de Python pero tiene áreas de mejora.
+                                </td>
+                                <td>Se sugiere practicar ejercicios de nivel básico para fortalecer las habilidades
+                                    antes de
+                                    avanzar al nivel intermedio.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El estudiante tiene un dominio sólido de los conceptos básicos de Python.</td>
+                                <td>Está listo para continuar al nivel intermedio y enfrentar retos más complejos.</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="3"><span>Intermedio</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    Conocimientos fundamentales en Python incompletos.</td>
+                                <td>
+                                    Reforzar conocimientos básicos y práctica en escenarios reales.</td>
+                                <td>
+                                    Variables, Funciones, Bucles, Listas, Diccionarios</td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    Conocimientos intermedios en Python, áreas a mejorar.</td>
+                                <td>
+                                    Estudiar áreas específicas y practicar más con ejercicios avanzados.</td>
+                                <td>Decoradores, Comprensión de listas, Manejo de excepciones</td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    Conocimientos sólidos en Python nivel intermedio.</td>
+                                <td>
+                                    Continuar con niveles avanzados y prácticas de proyectos reales.</td>
+                                <td>
+                                    Programación orientada a objetos, Módulos, Archivos</td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>Conocimientos insuficientes para el nivel.</td>
+                                <td>Refuerza áreas clave y realiza más prácticas en temas avanzados.</td>
+                                <td>- Manejo avanzado de estructuras de datos.<br>- Optimización y eficiencia en
+                                    algoritmos.<br>- Uso de librerías especializadas.</td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    Conocimientos aceptables, pero con áreas de mejora.</td>
+                                <td>
+                                    Dedica tiempo a revisar y practicar los temas que presentaron dificultades.</td>
+                                <td>- Programación orientada a objetos avanzada.<br>- Concurrency y paralelismo en
+                                    Python.<br>- Desarrollo de aplicaciones web con frameworks populares.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    Conocimientos sólidos y profundos del nivel avanzado.</td>
+                                <td>
+                                    Continúa practicando y considera contribuir en proyectos o aprender temas más
+                                    especializados.</td>
+                                <td>- Técnicas de debugging avanzado.<br>- Integraciones con sistemas externos (APIs,
+                                    bases
+                                    de datos).<br>- Seguridad y autenticación en aplicaciones Python.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica Ingeniero BI -->
+                <div class="tabla-container table" id="tabla10">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica
+                                    Ingeniero BI
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="3"><span>Básico</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato no ha alcanzado el nivel básico en los fundamentos de soluciones de
+                                    Business Intelligence.</td>
+                                <td>Recomendar profundizar en los conceptos básicos de Business intelligence y su
+                                    aplicación
+                                    en el campo real, resolviendo problemas de negocio. No se recomienda para continuar
+                                    en
+                                    el proceso de selección.</td>
+                                <td rowspan="9" style="width: 200px;">La prueba abarcará conceptos clave en el ámbito de
+                                    BI,
+                                    incluyendo bases de datos, modelado de datos, extracción y transformación de datos,
+                                    visualización y análisis de datos. Creación de bodegas de datos bajo metodologías,
+                                    ETLS
+                                    a nivel on premise y nube. Liderar proyectos de BI complejos, diseñar soluciones
+                                    avanzadas de almacenamiento y análisis de datos, así como asesorar a equipos más
+                                    jóvenes
+                                    en el desarrollo y mantenimiento de sistemas BI.</td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>El candidato ha alcanzado en el nivel básico en los fundamentos de soluciones de
+                                    Business Intelligence con un margen de mejora.</td>
+                                <td>Se sugiere mayor apropiación en el entendimiento del negocio traducido en una
+                                    solución
+                                    real de BI. Se debe evaluar el desempeño con las pruebas diagnósticas propias de las
+                                    herramientas a usar. Se recomienda para el proceso de selección y continuar en el
+                                    proceso dependiendo del nivel del cargo.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato no ha alcanzado un nivel medio en los conocimientos sobre soluciones de
+                                    Business intelligence en producción.</td>
+                                <td>Se sugiere mejorar en cuanto al desarrollo de Soluciones de BI, acordes a modelos de
+                                    negocios reales, llevando los tableros e informes a producción. Se recomienda para
+                                    el
+                                    proceso de selección y continuar en el proceso dependiendo del nivel del cargo.</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="3"><span>Intermedio</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato ha alcanzado un nivel medio en los conocimientos sobre soluciones de
+                                    Business intelligence en producción.</td>
+                                <td>Se sugiere profundizar en la coordinación de equipos de trabajo para desarrollar
+                                    soluciones de Business Intelligence y conocimiento en algunas de las soluciones de
+                                    BI en
+                                    nube. Se recomienda para el proceso de selección y continuar en el proceso
+                                    dependiendo
+                                    del nivel del cargo.</td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>El candidato no ha alcanzado un nivel Sólido en los conocimientos sobre soluciones
+                                    de
+                                    Business intelligence en producción y liderazgo de equipos.</td>
+                                <td>Se sugiere profundizar en aplicaciones robustas de BI, acorde a procesos de
+                                    entendimiento de modelos de negocio complejos y liderazgo de equipos. Se recomienda
+                                    para
+                                    el proceso de selección y continuar en el proceso dependiendo del nivel del cargo.
+                                </td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato ha alcanzado un nivel sólido en los conocimientos sobre soluciones de
+                                    Business intelligence en producción y liderazgo de equipos.</td>
+                                <td>Se sugiere apropiar temas asociadas a soluciones en la nube. Candidato a recomendar
+                                    en
+                                    primera instancia.</td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica React Native -->
+                <div class="tabla-container table" id="tabla11">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica React
+                                    Native
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="3"><span>Básico</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato no logra tener la capacidad de usar las funcionalidades basicas de
+                                    React,
+                                    para la contruccion de aplicaciones, ni nativas, con React Native, ni para Web con
+                                    ReactJS</td>
+                                <td>Profundizar mas en el uso adecuado de React para proceder con la construccion de
+                                    aplicaciones basicas.</td>
+                                <td rowspan="3">1. Sintaxis básica<br>2.,Estructuras de control<br>3. Tipos de datos
+                                    primitivos.</td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>El candidato sabe como funciona React y el flujo de trabajo en este, pero tiene
+                                    faltas
+                                    conceptuales en como funciona la herramienta de React Native</td>
+                                <td>Se sugiere practicar ejercicios de nivel básico para fortalecer las habilidades
+                                    antes de
+                                    avanzar al nivel intermedio.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato ha usado React Native, y sabe como funciona de primera mano, las
+                                    funcionalidades mas basicas de este junto con un entendimiento de como funciona la
+                                    herramienta, permitiendo hacer aplicaciones basicas y plantear soluciones sencillas
+                                </td>
+                                <td>Está listo para continuar al nivel intermedio y enfrentar retos más complejos.</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="3"><span>Intermedio</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato posee una comprensión limitada del concepto de performance en
+                                    aplicaciones
+                                    móviles, carece de experiencia práctica en la optimización del rendimiento y en el
+                                    uso
+                                    de herramientas de testing. Es posible que conozca principios fundamentales de los
+                                    patrones de diseño, pero aún no los aplica de manera efectiva en el desarrollo de
+                                    proyectos. Su capacidad para trabajar en el contexto de desafíos de programación es
+                                    limitada, necesitando guía y soporte adicional para contribuir en proyectos de
+                                    envergadura mediana.</td>
+                                <td>Reforzar conocimientos básicos y práctica en escenarios reales</td>
+                                <td>1. Variables <br>2. Funciones <br>3. Bucles <br>4. Listas, Diccionarios</td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>El candidato entiende la importancia del performance en aplicaciones móviles y ha
+                                    comenzado a aplicar técnicas básicas de optimización y testing en sus proyectos.
+                                    Aunque
+                                    tiene una noción general de cómo realizar pruebas para asegurar la mantenibilidad de
+                                    las
+                                    aplicaciones a lo largo del tiempo, todavía está en proceso de aprender a utilizar
+                                    herramientas de testing de manera más efectiva. Posee un conocimiento intermedio de
+                                    patrones de diseño y ha tenido alguna experiencia colaborando en equipos para
+                                    enfrentar
+                                    retos de programación, pero necesita desarrollar más sus habilidades para navegar
+                                    por
+                                    desafíos de envergadura mediana de manera autónoma y eficaz.</td>
+                                <td>Estudiar áreas específicas y practicar más con ejercicios avanzados.</td>
+                                <td>1. Decoradores <br>2. Comprensión de listas <br>3. Manejo de excepciones</td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato tiene conocimiento respecto al performance movil, y conoce de primera
+                                    mano
+                                    el uso adecuado de testing para la construccion de aplicaciones mantenibles a lo
+                                    largo
+                                    del tiempo . Adicional a conocer patrones de diseño que permiten desenvolverse en
+                                    equipo
+                                    al momento de enfrentearse a retos de envergadura mediana.</td>
+                                <td>Continuar con niveles avanzados y prácticas de proyectos reales.</td>
+                                <td>1. Programación orientada a objetos <br>2. Módulos <br>3. Archivos</td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato muestra una comprensión inicial de las prácticas avanzadas en el
+                                    desarrollo
+                                    de aplicaciones con React Native. Entiende la teoría detrás de la optimización del
+                                    rendimiento y el manejo de estados avanzados, pero aún carece de la experiencia
+                                    práctica
+                                    profunda necesaria para implementar estas soluciones de manera efectiva en
+                                    aplicaciones
+                                    de gran escala. Conoce las herramientas de testing y las estrategias para manejar
+                                    errores y mejorar el rendimiento, pero su aplicación de estos conocimientos es
+                                    inconsistente. Aunque está familiarizado con los conceptos de diseño de software y
+                                    puede
+                                    trabajar en proyectos de envergadura mediana, necesita guía y supervisión para
+                                    enfrentar
+                                    y superar retos técnicos complejos. Su capacidad para contribuir a la construcción
+                                    de
+                                    aplicaciones altamente mantenibles y optimizadas es limitada, sugiriendo la
+                                    necesidad de
+                                    un desarrollo y formación adicional en estas áreas.</td>
+                                <td>Reforzar áreas clave en el desarrollo de aplicaciones con React Native y realiza más
+                                    prácticas en temas avanzados.</td>
+                                <td rowspan="3">1. Manejo avanzado de Sintaxis <br>2. Desarrollo de aplicaciones con
+                                    React
+                                    Native <br>3. Optimización del rendimiento de aplicaciones <br>4. Conocimientos en
+                                    herramientas de testing</td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>El candidato tiene una sólida comprensión intermedia de las técnicas avanzadas de
+                                    optimización y mantenimiento en el desarrollo de aplicaciones con React Native.
+                                    Demuestra habilidad en la aplicación de prácticas de testing avanzadas para
+                                    construir
+                                    aplicaciones más estables y mantenibles. Posee un conocimiento práctico sobre cómo
+                                    manejar estados complejos y optimizar el rendimiento de aplicaciones móviles a gran
+                                    escala, incluyendo el manejo eficiente de notificaciones push, tareas en segundo
+                                    plano,
+                                    y la gestión de imágenes y assets. Aunque puede enfrentarse a desafíos de
+                                    envergadura
+                                    mediana con cierta autonomía, aún está en proceso de perfeccionar sus habilidades
+                                    para
+                                    la optimización bajo condiciones inestables o retantes al usuario final. Su
+                                    experiencia
+                                    colaborando en equipos para proyectos complejos puede ser notable, aunque aún se
+                                    beneficia de la mentoría en la aplicación de patrones de diseño avanzados.</td>
+                                <td>Dedica tiempo a revisar y practicar los temas que presentaron dificultades.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato exhibe un dominio avanzado de las técnicas de optimización de
+                                    rendimiento y
+                                    estrategias de mantenimiento para aplicaciones React Native. Ha demostrado una
+                                    experiencia profunda en el uso de herramientas de testing avanzadas y en la
+                                    implementación de prácticas de desarrollo que aseguran la escalabilidad,
+                                    mantenibilidad,
+                                    y la alta performance de aplicaciones móviles complejas. Maneja con destreza los
+                                    estados
+                                    globales, la optimización de listas extensas, la integración eficiente de APIs
+                                    nativas,
+                                    y la gestión avanzada de tareas en segundo plano, notificaciones push, y manejo de
+                                    errores de red. Su comprensión de los patrones de diseño le permite liderar y
+                                    colaborar
+                                    efectivamente en equipos para superar retos técnicos de gran envergadura, asegurando
+                                    que
+                                    las aplicaciones sean accesibles, eficientes, y ofrezcan una experiencia de usuario
+                                    óptima. Este nivel indica no solo competencia técnica sino también la habilidad para
+                                    innovar y aplicar soluciones creativas en el desarrollo de software.</td>
+                                <td>Continúa practicando y considera contribuir en proyectos o aprender temas más
+                                    especializados.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Diagnóstica Scrum Master -->
+                <div class="tabla-container table" id="tabla12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Diagnóstica Scrum
+                                    Master
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="2"><span>Básico -&gt; junior</span></td>
+                                <td class="first-approved">0,0 - 3,99</td>
+                                <td>No aprobado</td>
+                                <td>El candidato no demuestra un nivel de conocimientos básicos sobre el marco de
+                                    trabajo.
+                                </td>
+                                <td>
+                                    Si el candidato reporta que durante la ejecución de la prueba tuvo problemas como
+                                    (Internet sin señal, se fue la luz, contesto el teléfono, interrumpió la prueba,
+                                    entre
+                                    otros), validar la posibilidad de un segundo intento para aplicar esta prueba. </td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato demuestra conocimientos básicos sobre el marco de trabajo scrum.</td>
+                                <td>
+                                    El candidato debe ser entrevistado para verificar su conocimiento.</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="2"><span>Intermedio -&gt; semi-senior</span></td>
+                                <td class="first-approved">0,0 - 3,99</td>
+                                <td>No aprobado</td>
+                                <td>El candidato conoce sobre los conceptos basicos de scrum pero le falta mas claridad
+                                    en
+                                    algunos temas, por lo tanto sigue siendo Junior.
+                                </td>
+                                <td>
+                                    Se pueden reforzar conceptos y metodologías al interior para que alcance el nivel
+                                    semi-senior.</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr class="especial-row-table">
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato conoce y ha aplicado alguos conceptos del marco de trabajo, sin embargo
+                                    es
+                                    necesario realizar una prueba practica para dejarlo en el nivel semi senior.</td>
+                                <td>Se debe realizar la entrevista y ejercicio practico para asegurarse sobre su
+                                    conocimiento.</td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado -&gt; senior</span></td>
+                                <td class="first-approved">0,0 - 3,99</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    Es un candidato semi-senior; conoce las generalidades de las metodologías ágiles y
+                                    las
+                                    ha aplicado.
+                                </td>
+                                <td>
+                                    Se debe realizar la entrevista y ejercicio practico para asegurarse sobre su
+                                    conocimiento.</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    Es un candidato semi-senior; conoce las generalidades de las metodologías ágiles,
+                                    las ha
+                                    aplicado.</td>
+                                <td>
+                                    Se debe realizar la entrevista y ejercicio practico para asegurarse sobre su
+                                    conocimiento.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Técnica Desarrollo Q-Vision -->
+                <div class="tabla-container table" id="tabla13">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Técnica Desarrollo
+                                    Q-vision</th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="3"><span>Básico</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                                <td rowspan="3">1. Lorem ipsum dolor sit amet consectetur<br>2.Lorem ipsum dolor sit
+                                    amet
+                                    consectetur</td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="3"><span>Intermedio</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                                <td rowspan="3">1. Lorem ipsum dolor sit amet consectetur<br>2.Lorem ipsum dolor sit
+                                    amet
+                                    consectetur</td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                                <td rowspan="3">1. Lorem ipsum dolor sit amet consectetur<br>2.Lorem ipsum dolor sit
+                                    amet
+                                    consectetur</td>
+                            </tr>
+                            <tr>
+                                <td class="second-approved">3,5 - 3,99</td>
+                                <td>Aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                            </tr>
+                            <tr>
+                                <td class="third-approved">4,0 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ab illo optio.
+                                    Atque
+                                    error dolorem ab nesciunt, natus eos quia soluta fugiat aperiam accusamus
+                                    voluptatibus
+                                    nostrum voluptatum perspiciatis consectetur! Explicabo.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias labore illum
+                                    ipsa
+                                    nobis, temporibus impedit eius debitis doloremque harum, quas dignissimos distinctio
+                                    dolorum modi ex iusto accusamus, optio vel.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Técnica SQL + Data Warehouse-->
+                <div class="tabla-container table" id="tabla14">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Técnica SQL + Data
+                                    Warehouse</th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Primer Nivel (Básico) -->
+                            <tr>
+                                <td rowspan="2"><span>Básico -&gt; junior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    El candidato no demuestra un nivel de conocimientos básicos sobre SQL.
+                                </td>
+                                <td>
+                                    Si el candidato reporta que durante la ejecución de la prueba tuvo problemas como
+                                    (Internet sin señal, se fue la luz, contesto el teléfono, interrumpió la prueba,
+                                    entre
+                                    otros), validar la posibilidad de un segundo intento para aplicar esta prueba. </td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    El candidato demuestra conocimientos teoricos y practicos a nivel basico SQL. </td>
+                                <td>En caso que su calificación sea 3.5 y 4.5 se debe reforzar conceptos al interior de
+                                    Qvision mediante la plataforma IzyAcademy, para que su calificación sea de nivel
+                                    superior.</td>
+                            </tr>
+
+                            <!-- Segundo Nivel (Intermedio)-->
+                            <tr class="especial-row-table">
+                                <td rowspan="2"><span>Intermedio -&gt; semi-senior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>El candidato conoce teoría de pruebas pero le falta experiencia en la practica, por
+                                    tanto se considera que su nivel sigue siendo Junior.
+                                </td>
+                                <td>
+                                    Se pueden reforzar conceptos al interior para que alcance el nivel semi-senior.</td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr class="especial-row-table">
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato conoce e identifica scripts de pruebas, teoria y algunas estructuras
+                                    usadas
+                                    en SQL. </td>
+                                <td>En caso que su calificación sea 3.5 y 4.5 se debe reforzar conceptos al interior de
+                                    Qvision mediante la plataforma IzyAcademy, para que su calificación sea de nivel
+                                    superior. </td>
+                            </tr>
+
+                            <!-- Tercer Nivel (Avanzado) -->
+                            <tr>
+                                <td rowspan="3"><span>Avanzado -&gt; senior</span></td>
+                                <td class="first-approved">0,0 - 3,49</td>
+                                <td>No aprobado</td>
+                                <td>Es un candidato semi-senior; conoce las generalidades teoricas y manejos de scripts
+                                    SQL.
+                                </td>
+                                <td>
+                                    Se debe reforzar en capacidad de análisis y experiencia en SQL. </td>
+                                <td rowspan="2">NA</td>
+                            </tr>
+
+                            <tr>
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>El candidato conoce teoría, interpreta y crea script de consultas necesarias para
+                                    validar los datos solicitados en las pruebas requeridas al interior del cliente.
+                                </td>
+                                <td>Candidato Senior.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tabla - Técnica Habilidades y Conocimientos Funcionales-->
+                <div class="tabla-container table" id="tabla15">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6" class="titulo-interpretacion">Interpretación Prueba Técnica Habilidades
+                                    y
+                                    Conocimientos Funcionales</th>
+                            </tr>
+                            <tr>
+                                <th>Nivel</th>
+                                <th>Ponderación</th>
+                                <th>Estado</th>
+                                <th>Interpretación de concepto</th>
+                                <th>Sugerencia</th>
+                                <th>Temas Diagnósticos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Unico Nivel-->
+                            <tr class="especial-row-table">
+                                <td rowspan="3"><span>Nivel Único</span></td>
+                                <td class="first-approved">0 - 2</td>
+                                <td>No aprobado</td>
+                                <td>
+                                    - Si el candidato obtiene esta calificacion 0-2 y quedo en nivel Junior en la otra
+                                    prueba --&gt; Desconoce la teoria y no tiene practica en QA<br>
+                                    - Si el candidato obtiene esta calificacion 0-2 y quedo en nivel Semi-senior en la
+                                    otra
+                                    prueba --&gt; Conoce teoria, pero le falta practica por el uso de habilidades
+                                    blandas<br>
+                                    -Si el candidato obtiene esta calificacion 0-2 y quedo en nivel Senior en la otra
+                                    prueba
+                                    --&gt; Conoce teoria correctamente la teoria, pero le faltan fundamentos
+                                    argumentativos,
+                                    redacción y comprensivos
+                                </td>
+                                <td>
+                                    -El candidato no demuestra un nivel de conocimientos básicos sobre aseguramientos de
+                                    calidad de software, puede que tenga experiencia pero no sabe aplicar los conceptos
+                                    a
+                                    nivel interno de calidad.<br>
+                                    -Afianzar conocimientos al interior de QV mediante la IzyAcademy</td>
+                                <td rowspan="3">NA</td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="second-approved">2,1 - 3,49</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    - Si el candidato obtiene esta calificacion 2,1-3,49 y quedo en nivel Junior en la
+                                    otra
+                                    prueba --&gt; Desconoce la teoria, pero tiene algo de practica a nivel conceptual
+                                    empirico<br>
+                                    - Si el candidato obtiene esta calificacion 2,1-3,49 y quedo en nivel Semi-senior en
+                                    la
+                                    otra prueba --&gt; Conoce teoria y tiene algo de practica que ayudo a afianzar los
+                                    conocimientos cen dicha practica<br>
+                                    - Si el candidato obtiene esta calificacion 2,1-3,49 y quedo en nivel Senior en la
+                                    otra
+                                    prueba --&gt; Conoce teoria correctamente la teoria, ya tiene practica, pero debe
+                                    reforzar habilidades blandas de comprensión y redacción</td>
+                                <td>Afianzar conocimientos al interior de QV mediante la IzyAcademy</td>
+                            </tr>
+                            <tr class="especial-row-table">
+                                <td class="third-approved">3,5 - 5,0</td>
+                                <td>Aprobado</td>
+                                <td>
+                                    - Si el candidato obtiene esta calificacion 3,5-5 y quedo en nivel Junior en la otra
+                                    prueba --&gt; Desconoce la teoria, pero tiene experiencia en aseguramiento de
+                                    calidad,
+                                    motivo por el cua se desenvuelve<br>
+                                    - Si el candidato obtiene esta calificacion 3,5-5 y quedo en nivel Semi-senior en la
+                                    otra prueba --&gt; Conoce teoria y tiene a practica que ayudo a afianzar los
+                                    conocimientos. Esta persona se desenvuelve por si sola y no necesita acompañamiento
+                                    en
+                                    temas de habilidades blandas<br>
+                                    - Si el candidato obtiene esta calificacion 3,5-5 y quedo en nivel Senior en la otra
+                                    prueba --&gt; Conoce teoria correctamente la teoria, ya tiene bastantes practica
+                                    metodologica y sus habilidades blandas estan a nivel de ser un Líder
+
+                                </td>
+                                <td>
+                                    Afianzar conocimientos al interior de QV mediante la IzyAcademy</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Botón para cerrar la ventana modal o el popup -->
+                <div class="btn-popup-container">
+                    <button class="btn-popup" onclick="closePopup()">CERRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin ventana modal o popup -->
+
+    <script src="script.js"></script>
+</body>
+</html>

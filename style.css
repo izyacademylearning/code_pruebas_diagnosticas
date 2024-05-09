@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Banner de la página */
+.banner {
+    background-image: url('https://lh3.googleusercontent.com/pw/ABLVV84EZQkI1O9FCxAL_yXPrG4yB0UjB_UON6X5vQd-w6_-wzSU_Fq_6OMuwsZoCA5IDtNyxm7UpDGzv6KhYhRL5Qrjqo6Pj6pfhRxfXj7_1eRI38e5FN_CU1QE72LGwo024BB3rVrRtod8YfMymCyQVJLw7tfRpLA3ySAkaGWPyTqVrLnr_svQYZpLAZTpF4eD805Z3yj8KH-_i2WtrpNBXNibqPiUD78vzfwUxCjcpACfe2OYITvpFiQ4Nz8UXearAK49kW5bY6sJsvuEEmKhfktRgfjzUevFA_jRpCGP71upRca1hwFQeRqD0ofeJ2uBVUjp_jZrkhHDVCi5I1End5t9xkXMsbUj6dvNQkRwgpeGSQ4TEpKixa8zOuHrEIHeH-ctLjCkloROj6fNQXHNTledKy6pbdoYmylvDY4ZKlZYEXFEZmJfK9wFyyQZpukMijxAuDgVXKsXc8FppnS8NrDMJimHcKqV2ZBXzhTjttluLwnLhfEp4sxC-BLQ1cZxtdiDnnsFxj6UU78uowXp7E62V63D9fPcfhGFRNbSnGB615VEfu4NBGVgfgwe_VNkpGM5ALxIkPcs0Qn99uOHN4oBypd3uujbWV2vhac_XyChy3P6EzNnL9J5K5HixWO18rFPNO15dxhrKGM_x2WU-7rzQYeSBphCcp1f3eEaTT5g2bj2D42aggK8qiGD-OKhB1mlejafCV3mlikLwqmuJ9P-gxFSZX4OwngATJ94CJAk3EobWloRaMxAo0kq7UqSIuqRoqh2YBstQ_pHIHDbY_1bydDY3RipdfNEXniDDHiE9n_BngaKaSmS7nHByrEcnecnAwl0KUa76753cLY2E7zKuerrn0wH4q4wIoYTq2R87aLXY67OJFGUMWpj0PptAZBAHDFhzNIQrzPp5KEXa7Fzar2SkJtczmAG484PmkpASGhvUV55_3EvxVw=w1921-h610-s-no-gm?authuser=0'); 
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    color: black; 
+    text-align: center;
+    padding-top: 50px; 
+    font-size: 24px;
+  }
+
+.home14-slider .banner-style-one .slide{
+     padding: 165px 0;
+}
+
+@media (min-width: 1350px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+  @media screen and (max-width:1100px) {
+    .banner{
+        background-image: url('https://lh3.googleusercontent.com/pw/ABLVV86e2YX6SGdtmAM4skcekG5FWQq_ivBbR8dwIvW7lK5hT3-OWH-RyPV8e0PZ83X2VH0aC_Fbkma1ARO3qOWHte-iLZBI-AYhtRC-qxad-obut8lfuoiYdBuB_VNmRW3Glt_rvV2yJX7vhRStSNlZ1HOc9NBMOKhl9PxG9vBiDjiXgh8bhesKBVlbgPkpvy4PvHIOTD0A_9jgtudU4ZXnjzNNwQZop2t2UDvILsVKzUIckREcOdVeACPqHhXZV-EUeCK8rLzrzoEnvf0S6auK-N8VSpiH6vTi7iIVv74b4p9XpuTXEckIWck7J27EcSm9YmZ-V0C104G2mVLEfwfaXv8ahSQo4K61mpOeb9c9IIvizkORRMX4_X-r7gt0TQOfpydkMOb46MLkaULVgU3gdmPpifpspoaLN5JIap7c4Cxn7GY0XSmVTrFjwZlA__x305g1qxCPlndeTnm6mn_ZvXT4RayiIhE5Ph9oHAIXHEP0EFOuiBBpIhO_ol-vS76leoxodmywi99Xx98zteGBEgAY64c3J_AbCuneSrtZYCiIeGzx37kgSVehCDZNe2zbwmv4bsJoSfWFaYGbNRbwo8xfxMQNPBJdrz9bprsuPSkaZkvscqzxSNygBRNYoND0FjtiYbkn_pHT_1P7vQFqyu47bOQh-wqRrvLVm_NFlZnz6ENb4CfARO_s-5juujN-350HfQlh1vqot8CrprttQw7YhTc7QsXRQonBmG7Gs0TGL40HkGtoUbWnHkZnt4OckGM_nmut4v09vgCPS_m9nO4IjUhm9L8M9yRmua3Usw5HMsFM5EOn5V_Dt7tlEKGKdcMgYgh5cdbby5ghdzZK1MqE5qjzBlo1gFq37m26Xbz_V-kLqShKMTB7v0I9ASaBHJv6C50iSgQdp71eo2G33XAsoqDcq02QYeOMQSnczarManCTL36_i_8VKQE=w771-h401-s-no-gm?authuser=0');
+    }
+  }
+
+  @media screen and (max-width:720px) {
+    .banner{
+        background-image: url('https://lh3.googleusercontent.com/pw/ABLVV87IbmgjJeSAiiuMrjR6jqf65jjlnKcXuI0f87L5tCJOzELTgZ7pGT5OuyvsRRt_4i_MKj36_akKuv-7pnZy6WmETBDio-GPXrJTLObrMkXlRK5cYGDBbzleF8ukbngOzs02SBPZwpN1cQvV_B9IVRndvs_0byBakg5zmVyD_yPe2P7ONwo6GKq6TLY774p05dVxI6zhKyPvuK7FdWdDVQsNWmHl3DHx_l3DCQFGj1p94jyIJS7J5hLd8-ntJxLtoQwBFknXnAvlweBnlqZnQUa4IYn4MkJSgDBQwZyoce8GOkmriKxLov6LkwdTb9uU6DhTLgOcaP2G145Ku3CE2563OrVRmKksgo5tN2GRxgD20O2rjZ8ZK3m7MVXTVok9c2TEbtNv68v8QMt2_A_2Kv8WsTWYwUP_7zJeRVg93zI2lFGR9nJD8HUXOfdj0ZCXRLS3NLK2eXt4D04GyJGRHndn7TxVvHZdLDuXZn8k9kg_8-jQZSgWFEbWWa7R5QwWnweHFr4GNt_WqZ2M40OoOVac3oRfTlfdOKKe0baHNbaKjfXv_T-4mmb8388RFUjfFTbtI2qZPpnwzkJupusRSVKdaYz8PyEdFWxoSCUgJSkhgrU_XnM4LOAVbQfRw1-RcQqx7UNOFo_sHU3JjcmWrjvElrgI1Cb4qY8VRT124Zd_b7G1crkZalKZo7eQA9DwQlun8_wiJGVqZ_YC9jmqYrQhd6KFO5Nsk2bUD2exuOtwGZJTU6tFYFUGWzDmg58lIth42_A00iD4nPPlpmpOYzTxnGFGuPeG-u_4YyMbNfRcnFZLqy2ervCh7kHvd8PVpMuPjhFu6JosheKc77lhNkj123KqsDDd7wSK5J2i2sKFo2NtXPnZg5v-yyiH5nNGRk8B1bpI13B3xJeT66oUdjsaJ6kipjrDxGVTE3unJsXmbLRFVmdERL7idFg=w500-h401-s-no-gm?authuser=0');
+        background-position: top;
+    }
+  }
+
+  @media screen and (max-width:480px) {
+    .banner{
+        min-width: 322px;
+        background-image: url('https://lh3.googleusercontent.com/pw/ABLVV87U-A_jLgWSeo9RB9leldXRchuoqqDFNYnwDYIyepu-tQAki2IsQWenpqYEnvHGcniApI5bzO1mKijujSqPz7Xas-zoWhp_ZV6mo-B3CuVK20T1SJ-M-8aFbd3pSYvQa2POjswCUp2i9kbx09RZrZ6L8LvrSDxwcur2HOmjbEUoPUgKHiwCWRzN4HBhekH3RyKq5DBB6qMgfV0sdTto3_7bMe3ugMbcwHxf9eesPW61HeGeKXIVT6OOterHte8yNnqa4l5y3DX2-uV1QI3qE7Qj8OyEW87uGKtdJ_LqtIWhRq1-PSAx7W0YZPOxtD60G7NnqVPKbI9hN8YkjrGvl6nHXAVLKclZ4tOYJSDE5CP1VCi23sXNvNqxOk7Svkbctn5Y872sHkGyOaNP-QyHOYqpVFWnSbibZc7lqkQGp2499qA_VQhN5KmMcf9WAIhlD-scXkVu77gYrOHILLjIwoRAlZtJv8ziheeyVmIutGPURQ3ON7UfnwokYV8orQ_KHsRTCkkqzj3STYJbE9Kht7fWOhHWR9hVx49InRMeANTk7tMIj-UtBHBO1xqe6a8uUNxBENAIY0GFNEXFj-8ShoG3l9YuYhT-1QFqNTmX_hWLaXak-e8l1dgLnDtd2cW3KV-y3Ac-nv5hROSqkUm6ea-zKESrDgjvrLuJCGK0SYE8pqgDV54c3Tl6Z-VDk0-fhzN53v01XfG6f4DkwBIp6dmxbaTIX1OtCTSLKc548VLAa53OLbQIBCCrMqiMTuwKZvShsPT11RccfvZy38XbPJX-rwnG8iDXA-o3avW8Q_KWTMV-R6CDau4NvtDQUQjDMPwf2GB1kZ9rXp8i_RZtr4den77AXCk1XTwoGlUz5pSeF79heGg9AwbXQuSyLIdh11wIWPxpDKvWfLt21u73VKTJVCArrReJYIYJy9hRUO5IJo7XchzRtpEnZq0=w481-h771-s-no-gm?authuser=0');
+        background-position: top;
+        height: 420px; 
+    }
+  }
+
+  /* Oculta el banner por defecto */
+  .inner_page_breadcrumb{
+    display:none;
+ }
+ 
+ /* Mueve la tuerca de configuración del bloque HTML */
+ .block_with_controls .block-controls{
+  margin-top:100px;
+ }
+
+/* Sirve para eliminar popup que se mostraba en la maquina 81 */
+.fade:not(.show) {
+    opacity: 1;
+    display: none;
+}
+
+/* Contenedor para las categorias */
+input[type="radio"]{
+    display: none;
+}
+
+.container-category{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.4);
+    min-width: 322px;
+}
+
+
+.container-category label{
+    padding: 6px 30px;
+    margin: 5px;
+    font-size: 20px;
+    background: #e2e2e2;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:512px) {
+    .container-category label  {
+        padding: 5px;
+        font-size: 16px;
+    }
+  }
+
+.container-category label:hover{
+    opacity: 0.9;
+}
+
+/* Inicio estilos seccion 3 */
+/* Estilos para el contenedor grid */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    column-gap: 20px;
+    row-gap: 40px;   
+    margin-top: 10px;
+    justify-items: center;
+    padding: 10px;
+}
+
+
+/* Estilos para las cards*/
+.container-flipcard{
+    position: relative;
+    width: 340px;    /* En izyAcademy subir el tamaño tanto de largo como de ancho ya que el tamaño de la tarjeta se reduce alla*/
+    height: 460px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.container-flipcard .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 1s;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Card frontal */
+.flex-container__card-front {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 10px 10px 10px 10px;
+    background-color: #203C6C;
+    transform: perspective(500px) rotatey(0deg);
+}
+
+.container-flipcard:hover .flex-container__card-front{
+    transform: perspective(500px) rotatey(180deg);
+}
+
+.flex-container__card-img{
+    position: relative;
+    width: 100%;
+    height: 48%;
+}
+
+.flex-container__card-img img{
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.flex-container__card-img h4{
+    color: white !important;
+    position: absolute;
+    background-color: #203C6C;
+    min-width: 60%;
+    max-width: 85%;
+    bottom: 0;
+    line-height: 30px;
+    font-size: 25;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 2px -2px 10px  black;
+    border-radius: 0px 8px 0px 0px;
+    margin: 0;
+    margin-bottom: 0 !important;
+}
+
+.flex-container__card-text{
+    width: 100%;
+    height: 52%;
+    padding: 7px;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+}
+
+.flex-container__card-text p{
+    margin-top: 5px;
+}
+
+/* Card trasera */
+
+.flex-container__card-back{
+    display: flex;
+    flex-direction: column;
+    background-color: #203C6C;
+    transform: perspective(500px) rotatey(180deg);
+    border: 2px solid #203C6C;
+    color: white;
+    padding: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.container-flipcard:hover .flex-container__card-back{
+    transform: perspective(500px) rotatey(360deg);
+}
+
+.flex-container__card-back h3{
+    line-height: 32px;
+    text-align: center;
+    background-color: #0c1a33;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.flex-container__card-back ul{
+    text-align: left;
+    list-style-type: square;
+    margin: auto;
+    font-weight: bold;
+}
+
+.flex-container__card-back ul::before,
+.flex-container__card-back ul::after{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flex-container__card-back li{
+    margin: 20px;  
+}
+
+.flex-container__card-back li::marker{
+    color: #F5AD0C;
+}
+
+.flex-container__card-back li span{
+    font-weight: normal;
+    opacity: 0.9;
+    color: white;
+}
+
+.btn-open{
+   border: 0;
+   width: 40%;
+   line-height: 32px;
+   border-radius: 5px;
+   text-align: center;
+   font-size: 1rem;
+   background-color: unset;
+   color: #F5AD0C;
+   margin: auto;
+   margin-bottom: 10px;
+   cursor: pointer;
+   padding: 5px;
+}
+/* FIN estilos seccion 3 */
+
+
+
+/* Inicio estilos para la ventana modal */
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 0;
+  }
+
+#popup {
+    align-items: center;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    width: 90%;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    border: 6px solid #203C6C;
+  }
+
+  .popup-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Diseño de la tabla */
+
+  .tabla-container {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    position: relative;
+  }
+
+  @media  screen and (max-width:700px) {
+    .tabla-container{
+        overflow-x: auto;
+    }
+    
+  }
+
+  table{
+    min-height: 100%;
+  }
+
+ .table thead{
+     background-color: #203C6C;
+     color: white;
+     position: sticky;
+     top: 0;
+   
+ }
+
+ .titulo-interpretacion{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+ }
+ 
+ .table thead th{
+    vertical-align: middle;
+    text-align: center;
+ }
+
+  
+ .table td{
+    vertical-align: middle;
+    text-align: center;
+ }
+ 
+ table,th,td{
+     border: 1px solid rgb(180, 180, 180);
+     border-collapse: collapse;
+     padding: 5px;
+ }
+ 
+ .table tr td span{
+     font-weight: bold;
+ }
+
+ /* Diseño para distingir rows o filas */
+
+ .especial-row-table{
+    background-color: #dde4f7;
+ }
+
+ /* Diseño de la columna "Estado" */
+ 
+ .first-approved {
+     color: red;
+ }
+ 
+ .second-approved{
+     color: blue;
+ }
+ 
+ .third-approved{
+     color: green;
+ }
+
+/* Botón dentro del popup */
+
+.btn-popup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+.btn-popup{
+    border: 0;
+    color: white;
+    font-weight: bold;
+    line-height: 27px;
+    border-radius: 5px;
+    background: #F5AD0C;
+    width: 25%;
+}
+
+.btn-popup:hover{
+    opacity: .8;
+}
+/* Final estilos para la ventana modal */
+
+
+/* Sistema de Filtrado */
+
+/* Oculta las tarjetas que no pertenecen a la categoría seleccionada */
+[value="DIAGNÓSTICAS"]:checked ~ .grid-container .container-flipcard:not([data-category~="DIAGNÓSTICAS"]),
+[value="TÉCNICAS"]:checked ~ .grid-container .container-flipcard:not([data-category~="TÉCNICAS"]){
+    display: none;
+}
+
+/* Estiliza las etiquetas de categoría según la opción seleccionada */
+[value="DIAGNÓSTICAS"]:checked ~ .container-category [for="DIAGNÓSTICAS"],
+[value="TÉCNICAS"]:checked ~ .container-category [for="TÉCNICAS"],
+[value="TODOS"]:checked ~ .container-category [for="TODOS"]{
+    background: #203C6C;
+    color: white;
+}
